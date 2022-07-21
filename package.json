@@ -1,0 +1,27 @@
+{
+  "name": "day-16",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Code-Of-Duty-The-Ironvengers/day-16.git"
+  },
+  "keywords": [],
+  "author": "André de Albuquerque",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Code-Of-Duty-The-Ironvengers/day-16/issues"
+  },
+  "homepage": "https://github.com/Code-Of-Duty-The-Ironvengers/day-16#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "hbs": "^4.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
