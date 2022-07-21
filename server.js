@@ -1,6 +1,7 @@
 const express = require("express");
+// #1 of backend development
 
-const students = [
+const studentDatabase = [
   { name: "Kira", country: "Germany" },
   { name: "Vicent", country: "Germany" },
   { name: "Guillermo", country: "Espain" },
@@ -45,13 +46,13 @@ app.post("/create-student", (req, res) => {
   //
   const { studentName, country } = req.body;
   console.log(req.body);
-  students.push({ name: studentName, country });
+  studentDatabase.push({ name: studentName, country });
   //   res.render("create-student");
   res.redirect("/");
 });
 
 app.get("/search", (req, res) => {
-  const singleStudent = students.find(
+  const singleStudent = studentDatabase.find(
     (student) =>
       student.name.toLowerCase() === req.query.studentName.toLowerCase()
   );
